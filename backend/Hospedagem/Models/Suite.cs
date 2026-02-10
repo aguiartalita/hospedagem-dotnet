@@ -2,13 +2,19 @@ namespace Hospedagem.Models
 {
     public class Suite
     {
-        public string TipoSuite { get; set; }
-        public int Capacidade { get; set; }
-        public decimal ValorDiaria { get; set; }
+        public TipoSuite Tipo { get; private set; }
+        public int Capacidade { get; private set; }
+        public decimal ValorDiaria { get; private set; }
 
-        public Suite(string tipoSuite, int capacidade, decimal valorDiaria)
+        public Suite(TipoSuite tipo, int capacidade, decimal valorDiaria)
         {
-            TipoSuite = tipoSuite;
+            if (capacidade <= 0)
+                throw new ArgumentException("Capacidade deve ser maior que zero.");
+
+            if (valorDiaria <= 0)
+                throw new ArgumentException("Valor da diária deve ser maior que zero.");
+
+            Tipo = tipo;
             Capacidade = capacidade;
             ValorDiaria = valorDiaria;
         }
