@@ -140,6 +140,12 @@ npm run dev
 
 All mandatory challenge requirements have been fulfilled.
 
+--------------------------
+<img width="455" height="550" alt="image" src="https://github.com/user-attachments/assets/825b42ce-dfa0-4c08-aac6-7bbe68f0e8a3" />
+<img width="421" height="376" alt="image" src="https://github.com/user-attachments/assets/92f8ffa0-3863-4628-a0f0-9aeae2322614" />
+
+
+
 ---
 
 ## Author
