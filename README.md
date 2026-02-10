@@ -1,21 +1,148 @@
-# DIO - Trilha .NET - Explorando a linguagem C#
-www.dio.me
+# Hotel TransilDev
 
-## Desafio de projeto
-Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de explorando a linguagem C#, da trilha .NET da DIO.
+Projeto desenvolvido como solução do Desafio de Hospedagem em .NET da Digital Innovation One (DIO).
 
-## Contexto
-Você foi contratado para construir um sistema de hospedagem, que será usado para realizar uma reserva em um hotel. Você precisará usar a classe Pessoa, que representa o hóspede, a classe Suíte, e a classe Reserva, que fará um relacionamento entre ambos.
+Sistema simples de reserva de hotel, com aplicação de regras de negócio como cálculo de valor da diária e desconto para reservas com período superior a 10 dias.
 
-O seu programa deverá cálcular corretamente os valores dos métodos da classe Reserva, que precisará trazer a quantidade de hóspedes e o valor da diária, concedendo um desconto de 10% para caso a reserva seja para um período maior que 10 dias.
+---
 
-## Regras e validações
-1. Não deve ser possível realizar uma reserva de uma suíte com capacidade menor do que a quantidade de hóspedes. Exemplo: Se é uma suíte capaz de hospedar 2 pessoas, então ao passar 3 hóspedes deverá retornar uma exception.
-2. O método ObterQuantidadeHospedes da classe Reserva deverá retornar a quantidade total de hóspedes, enquanto que o método CalcularValorDiaria deverá retornar o valor da diária (Dias reservados x valor da diária).
-3. Caso seja feita uma reserva igual ou maior que 10 dias, deverá ser concedido um desconto de 10% no valor da diária.
+## Objetivo do Desafio
+
+Implementar um sistema de hospedagem utilizando Programação Orientada a Objetos em .NET, contendo:
+
+- Classe Pessoa (hóspede)
+- Classe Suite
+- Classe Reserva
+- Relacionamento entre hóspedes e suíte
+- Cálculo do valor total da reserva
+- Desconto de 10% para reservas acima de 10 dias
+
+---
+
+## Estrutura do Projeto
+
+backend/Hospedagem  
+Models/Pessoa.cs  
+Models/Suite.cs  
+Models/Reserva.cs  
+Models/ReservaInput.cs  
+Program.cs  
+
+frontend/hospedagem-ui  
+
+---
+
+## Backend (.NET)
+
+Aplicação Console desenvolvida em C#, utilizando Programação Orientada a Objetos e regras de negócio conforme especificado no desafio.
+
+### Executar o backend
+
+cd backend/Hospedagem  
+dotnet run  
+
+---
+
+## Frontend (React)
+
+Interface desenvolvida em React com Vite, utilizada como extensão de portfólio para simular a interação com o backend.
+
+### Executar o frontend
+
+cd frontend/hospedagem-ui  
+npm install  
+npm run dev  
+
+---
+
+## Requisitos do Desafio
+
+- Classes Pessoa, Suite e Reserva implementadas
+- Cálculo de diária funcional
+- Desconto aplicado para reservas acima de 10 dias
+- Uso correto de Programação Orientada a Objetos
+
+Todos os requisitos obrigatórios do desafio foram atendidos.
+
+---
+
+## Autora
+
+Talita Aguiar  
+Desenvolvedora de Software
 
 
-![Diagrama de classe estacionamento](diagrama_classe_hotel.png)
+-----------------------------------------------------------------------------------
 
-## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+# Hotel TransilDev
+
+Project developed as a solution for the .NET Hosting Challenge from Digital Innovation One (DIO).
+
+Simple hotel reservation system applying business rules such as daily cost calculation and discount for reservations longer than 10 days.
+
+---
+
+## Challenge Objective
+
+Implement a hotel reservation system using Object-Oriented Programming in .NET, including:
+
+- Person class (guest)
+- Suite class
+- Reservation class
+- Relationship between guests and suite
+- Total reservation cost calculation
+- 10% discount for reservations longer than 10 days
+
+---
+
+## Project Structure
+
+backend/Hospedagem  
+Models/Person.cs  
+Models/Suite.cs  
+Models/Reservation.cs  
+Models/ReservationInput.cs  
+Program.cs  
+
+frontend/hospedagem-ui  
+
+---
+
+## Backend (.NET)
+
+Console application developed in C#, using Object-Oriented Programming and business rules as required by the challenge.
+
+### Run backend
+
+cd backend/Hospedagem  
+dotnet run  
+
+---
+
+## Frontend (React)
+
+Interface developed with React and Vite, used as a portfolio extension to simulate interaction with the backend.
+
+### Run frontend
+
+cd frontend/hospedagem-ui  
+npm install  
+npm run dev  
+
+---
+
+## Challenge Requirements
+
+- Person, Suite and Reservation classes implemented
+- Daily cost calculation working
+- Discount applied for reservations longer than 10 days
+- Correct use of Object-Oriented Programming
+
+All mandatory challenge requirements have been fulfilled.
+
+---
+
+## Author
+
+Talita Aguiar  
+Software Developer
